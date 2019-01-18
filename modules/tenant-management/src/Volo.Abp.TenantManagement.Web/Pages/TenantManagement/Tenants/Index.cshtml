@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿@page
 @using Microsoft.AspNetCore.Mvc.Localization
 @using Volo.Abp.TenantManagement.Localization
@@ -28,4 +29,44 @@
             </thead>
         </abp-table>
     </abp-card-body>
+=======
+﻿@page
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Volo.Abp.AspNetCore.Mvc.UI.Layout
+@using Volo.Abp.TenantManagement.Localization
+@using Volo.Abp.TenantManagement.Web.Navigation
+@using Volo.Abp.TenantManagement.Web.Pages.TenantManagement.Tenants
+@model IndexModel
+@inject IHtmlLocalizer<AbpTenantManagementResource> L
+@inject IPageLayout PageLayout
+@{
+    PageLayout.Content.Title = L["Tenants"].Value;
+    PageLayout.Content.BreadCrumb.Add(L["Menu:TenantManagement"].Value);
+    PageLayout.Content.MenuItemName = TenantManagementMenuNames.Tenants;
+}
+@section scripts {
+    <script type="text/javascript" src="~/modules/multi-tenancy/views/tenants/index.js"></script>
+}
+<abp-card id="TenantsWrapper">
+    <abp-card-header>
+        <abp-row>
+            <abp-column size-md="_6">
+                <abp-card-title>@L["Tenants"]</abp-card-title>
+            </abp-column>
+            <abp-column size-md="_6" class="text-right">
+                <abp-button button-type="Primary" name="CreateTenant" icon="plus" text="@L["NewTenant"].Value" />
+            </abp-column>
+        </abp-row>
+    </abp-card-header>
+    <abp-card-body>
+        <abp-table striped-rows="true" class="nowrap">
+            <thead>
+                <tr>
+                    <th>@L["Actions"]</th>
+                    <th>@L["TenantName"]</th>
+                </tr>
+            </thead>
+        </abp-table>
+    </abp-card-body>
+>>>>>>> upstream/master
 </abp-card>

@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 ﻿{
   "culture": "tr",
   "texts": {
     "BirthDate": "Dogum gunu"
   }
+=======
+﻿{
+  "culture": "tr",
+  "texts": {
+    "BirthDate": "Dogum gunu",
+    "Value1":  "Değer Bir" 
+  }
+>>>>>>> upstream/master
 }

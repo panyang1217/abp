@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "culture": "en",
   "texts": {
@@ -9,4 +10,17 @@
     "Permission:ChangePermissions": "Change permissions",
     "Permission:UserManagement": "User management"
   }
+=======
+{
+  "culture": "en",
+  "texts": {
+    "Permission:IdentityManagement": "Identity management",
+    "Permission:RoleManagement": "Role management",
+    "Permission:Create": "Create",
+    "Permission:Edit": "Edit",
+    "Permission:Delete": "Delete",
+    "Permission:ChangePermissions": "Change permissions",
+    "Permission:UserManagement": "User management"
+  }
+>>>>>>> upstream/master
 }

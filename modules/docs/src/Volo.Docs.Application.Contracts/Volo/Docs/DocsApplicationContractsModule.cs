@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using Volo.Abp.Modularity;
 
 namespace Volo.Docs
@@ -8,3 +9,19 @@ namespace Volo.Docs
         
     }
 }
+=======
+﻿using Volo.Abp.Application;
+using Volo.Abp.Modularity;
+
+namespace Volo.Docs
+{
+    [DependsOn(
+        typeof(DocsDomainSharedModule),
+        typeof(AbpDddApplicationModule)
+        )]
+    public class DocsApplicationContractsModule : AbpModule
+    {
+        
+    }
+}
+>>>>>>> upstream/master

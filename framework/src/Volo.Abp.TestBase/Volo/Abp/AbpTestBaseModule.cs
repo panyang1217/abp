@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.Modularity;
 
@@ -11,3 +12,14 @@ namespace Volo.Abp
         }
     }
 }
+=======
+﻿using Volo.Abp.Modularity;
+
+namespace Volo.Abp
+{
+    public class AbpTestBaseModule : AbpModule
+    {
+
+    }
+}
+>>>>>>> upstream/master

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.AutoMapper;
 using Volo.Abp.Modularity;
@@ -21,4 +22,29 @@ namespace Volo.Abp.Identity
             });
         }
     }
+=======
+﻿using Microsoft.Extensions.DependencyInjection;
+using Volo.Abp.AutoMapper;
+using Volo.Abp.Modularity;
+using Volo.Abp.PermissionManagement;
+
+namespace Volo.Abp.Identity
+{
+    [DependsOn(
+        typeof(AbpIdentityDomainModule), 
+        typeof(AbpIdentityApplicationContractsModule), 
+        typeof(AbpAutoMapperModule),
+        typeof(AbpPermissionManagementApplicationModule)
+        )]
+    public class AbpIdentityApplicationModule : AbpModule
+    {
+        public override void ConfigureServices(ServiceConfigurationContext context)
+        {
+            Configure<AbpAutoMapperOptions>(options =>
+            {
+                options.AddProfile<AbpIdentityApplicationModuleAutoMapperProfile>();
+            });
+        }
+    }
+>>>>>>> upstream/master
 }

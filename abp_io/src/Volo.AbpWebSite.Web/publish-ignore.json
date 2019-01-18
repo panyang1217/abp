@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   ".well-known/": {},
   "TemplateFiles/": {},
@@ -5,3 +6,13 @@
   "appsettings.json": {},
   "web.config": {}
 }
+=======
+{
+  ".well-known/": {},
+  "TemplateFiles/": {},
+  "Logs/": {},
+  "wwwroot/files/": {},
+  "appsettings.json": {},
+  "web.config": {}
+}
+>>>>>>> upstream/master

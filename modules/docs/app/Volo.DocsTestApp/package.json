@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "version": "0.1.0",
   "name": "volo.docstestapp",
@@ -6,3 +7,14 @@
     "@abp/aspnetcore.mvc.ui.theme.basic": "^0.4.3"
   }
 }
+=======
+{
+  "version": "0.1.0",
+  "name": "volo.docstestapp",
+  "private": true,
+  "dependencies": {
+    "@abp/aspnetcore.mvc.ui.theme.basic": "^0.4.9",
+    "@abp/docs": "^0.5.1"
+  }
+}
+>>>>>>> upstream/master

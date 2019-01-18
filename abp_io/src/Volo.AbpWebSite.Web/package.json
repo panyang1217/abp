@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "version": "0.1.0",
   "name": "volo.aspnetzero.support",
@@ -7,3 +8,15 @@
     "@abp/blogging": "^0.4.9"
   }
 }
+=======
+{
+  "version": "0.1.0",
+  "name": "volo.aspnetzero.support",
+  "private": true,
+  "dependencies": {
+    "@abp/aspnetcore.mvc.ui.theme.basic": "^0.4.9",
+    "@abp/blogging": "^0.4.9",
+    "@abp/docs": "^0.5.1"
+  }
+}
+>>>>>>> upstream/master

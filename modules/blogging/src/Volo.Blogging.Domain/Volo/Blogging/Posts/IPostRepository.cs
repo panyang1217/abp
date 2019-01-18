@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -12,3 +13,19 @@ namespace Volo.Blogging.Posts
         Task<Post> GetPostByUrl(Guid blogId, string url);
     }
 }
+=======
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Volo.Abp.Domain.Repositories;
+
+namespace Volo.Blogging.Posts
+{
+    public interface IPostRepository : IBasicRepository<Post, Guid>
+    {
+        Task<List<Post>> GetPostsByBlogId(Guid id);
+
+        Task<Post> GetPostByUrl(Guid blogId, string url);
+    }
+}
+>>>>>>> upstream/master

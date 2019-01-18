@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "version": "1.0.0",
   "name": "asp.net",
@@ -8,3 +9,15 @@
   "devDependencies": {
   }
 }
+=======
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "@abp/aspnetcore.mvc.ui.theme.shared": "^0.4.3",
+    "highlight.js": "^9.13.1"
+  },
+  "devDependencies": {}
+}
+>>>>>>> upstream/master

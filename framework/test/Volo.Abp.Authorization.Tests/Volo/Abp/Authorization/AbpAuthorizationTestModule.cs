@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.Authorization.Permissions;
 using Volo.Abp.Authorization.TestServices;
@@ -29,4 +30,37 @@ namespace Volo.Abp.Authorization
             });
         }
     }
+=======
+﻿using Microsoft.Extensions.DependencyInjection;
+using Volo.Abp.Authorization.Permissions;
+using Volo.Abp.Authorization.TestServices;
+using Volo.Abp.Autofac;
+using Volo.Abp.Modularity;
+
+namespace Volo.Abp.Authorization
+{
+    [DependsOn(typeof(AbpAutofacModule))]
+    [DependsOn(typeof(AbpAuthorizationModule))]
+    public class AbpAuthorizationTestModule : AbpModule
+    {
+        public override void PreConfigureServices(ServiceConfigurationContext context)
+        {
+            context.Services.OnRegistred(onServiceRegistredContext =>
+            {
+                if (typeof(IMyAuthorizedService1).IsAssignableFrom(onServiceRegistredContext.ImplementationType))
+                {
+                    onServiceRegistredContext.Interceptors.TryAdd<AuthorizationInterceptor>();
+                }
+            });
+        }
+
+        public override void ConfigureServices(ServiceConfigurationContext context)
+        {
+            Configure<PermissionOptions>(options =>
+            {
+                options.DefinitionProviders.TryAdd<AuthorizationTestPermissionDefinitionProvider>();
+            });
+        }
+    }
+>>>>>>> upstream/master
 }
